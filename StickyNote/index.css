@@ -1,0 +1,17 @@
+#stickies{
+    margin: 50px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    height: 220px;
+    width: 180px;
+    box-shadow: 2px 2px 1px 1px rgba(200, 199, 178,0.5);
+    background: antiquewhite;
+    margin: 30px;
+    transform: rotate(2deg);
+}
+li .sticky{
+    font-weight: 400;
+    font-size: 20px;
+}
