@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圆</title>
+</head>
+<body>
+    <canvas width="600" height="600" id="smileCanvas">
+        Sorry,Please upgrade your browser!
+    </canvas>
+
+    <script>
+            var canvas = document.getElementById("smileCanvas");
+            canvas.style.border = "1px solid black";
+            var context = canvas.getContext("2d");
+
+            //黄色大圆
+            context.beginPath();
+            context.arc(300,300,200,0,degreesToRadians(360),true);
+            context.fillStyle = "#fffccc";
+            context.fill();
+            context.stroke();
+
+            //左边眼睛
+            context.beginPath();
+            context.arc(200,250,25,0,degreesToRadians(360),true);
+            context.fillStyle = "#D3D2A3";
+            context.fill();
+            context.stroke();
+
+            //右边眼睛
+            context.beginPath();
+            context.arc(400,250,25,0,degreesToRadians(360),true);
+            context.fillStyle = "#D3D2A3";
+            context.fill();
+            context.stroke();
+
+            //鼻子
+            context.beginPath();
+            context.moveTo(300,300);
+            context.lineTo(300,350);
+            context.stroke();
+
+            //嘴巴
+            context.beginPath();
+            context.arc(300,350,75,degreesToRadians(20),degreesToRadians(160),false);
+            context.stroke();
+
+            function degreesToRadians(degree){
+                return (degree * Math.PI / 180);
+            }
+    </script>
+</body>
+</html>

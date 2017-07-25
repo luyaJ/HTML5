@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画布</title>
+    <script src="tweetshirt.js"></script>
+    <style>
+        #tshirtCanvas{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>TweetShirt</h1>
+    <canvas width="600" height="200" id="tshirtCanvas">
+        <p>Please upgrade your browser to use TweetShirt!</p>
+    </canvas>
+
+    <form>
+        <p>
+            <label for="backgroundColor">Select background color:</label>
+            <select id="backgroundColor">
+                <option value="white" selected="selected">White</option>
+                <option value="balck">Black</option>
+            </select>
+        </p>
+        <p>
+            <label for="shape">Circle or squares?</label>
+            <select id="shape">
+                <option value="none" selected="selected">Neither</option>
+                <option value="circles">Circles</option>
+                <option value="squares">Squares</option>
+            </select>
+        </p>
+        <p>
+            <label for="foregroundColor">Select text color:</label>
+            <select id="foregroundColor">
+                <option value="black" selected="selected">Black</option>
+                <option value="white">White</option>
+            </select>
+        </p>
+        <p>
+            <label for="tweets">Pick a tweet:</label>
+            <select id="tweets">
+
+            </select>
+        </p>
+        <p>
+            <input type="button" id="previewButton" value="Preview">
+        </p>
+    </form>
+
+    <!--<script src="http://twitter.com/statuses/user_timeline/wickedsmartly.json?callback=updateTweets">-->
+
+    <!--</script>-->
+</body>
+</html>
